@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPage</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="about">
+          <p><b>Library System</b></p>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#register">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Table Start -->
+    <div class="tab">
+      <table id="books">
+        <caption class="caption">
+          <b>Books</b>
+        </caption>
+
+        <tr>
+          <th class="heading">Book ID</th>
+          <th class="heading">Title</th>
+          <th class="heading">Author</th>
+          <th class="heading">Genre</th>
+          <th class="heading">Availability</th>
+        </tr>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <a href="#" id="title">Book Title 1</a>
+              <table class="titletable">
+                <tr>
+                  <td>Publication Date:2000</td>
+                </tr>
+                <tr>
+                  <td>Page Count:250</td>
+                </tr>
+                <tr>
+                  <td>ISBN:215-4589621648</td>
+                </tr>
+              </table>
+            </td>
+            <td>Author Name 1</td>
+            <td>Genre 1</td>
+            <td>Available</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>
+              <a href="#" id="title">Book Title 2</a>
+              <table class="titletable">
+                <tr>
+                  <td>Publication Date:2005</td>
+                </tr>
+                <tr>
+                  <td>Page Count:300</td>
+                </tr>
+                <tr>
+                  <td>ISBN:215-4589621789</td>
+                </tr>
+              </table>
+            </td>
+            <td>Author Name 2</td>
+            <td>Genre 2</td>
+            <td>Not Available</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>
+              <a href="#" id="title">Book Title 3</a>
+              <table class="titletable">
+                <tr>
+                  <td>Publication Date:2010</td>
+                </tr>
+                <tr>
+                  <td>Page Count:325</td>
+                </tr>
+                <tr>
+                  <td>ISBN:215-4589621728</td>
+                </tr>
+              </table>
+            </td>
+            <td>Author Name 3</td>
+            <td>Genre 3</td>
+            <td>Available</td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>
+              <a href="#" id="title">Book Title 3</a>
+              <table class="titletable">
+                <tr>
+                  <td>Publication Date:2012</td>
+                </tr>
+                <tr>
+                  <td>Page Count:300</td>
+                </tr>
+                <tr>
+                  <td>ISBN:215-4589621561</td>
+                </tr>
+              </table>
+            </td>
+            <td>Author Name 4</td>
+            <td>Genre 4</td>
+            <td>Available</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>
+              <a href="#" id="title">Book Title 5</a>
+              <table class="titletable">
+                <tr>
+                  <td>Publication Date:2018</td>
+                </tr>
+                <tr>
+                  <td>Page Count:350</td>
+                </tr>
+                <tr>
+                  <td>ISBN:215-4589621956</td>
+                </tr>
+              </table>
+            </td>
+            <td>Author Name 5</td>
+            <td>Genre 5</td>
+            <td>Not Available</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Table End -->
+
+    <!-- Form Start -->
+
+    <div id="regform">
+      <form action="#" method="post" id="register">
+        <h1>Register</h1>
+        <label for="fname">First Name</label><br />
+        <input
+          type="text"
+          id="fname"
+          placeholder="Enter your first name"
+          required
+        /><br />
+        <label for="lname">Last Name</label><br />
+        <input
+          type="text"
+          id="lname"
+          placeholder="Enter your last name"
+          required
+        /><br />
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="e.g. xyz@gmail.com"
+          required
+        /><br />
+        <label for="dob">Date of Birth</label><br />
+        <input type="date" id="dob" placeholder="dd/mm/yyyy" required /><br />
+        <label for="age">Age</label><br />
+        <input
+          type="number"
+          id="age"
+          minlength="5"
+          maxlength="100"
+          required
+        /><br />
+        <label for="password">Password</label><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="********"
+          required
+        /><br />
+        <label for="cpassword">Confirm Password</label><br />
+        <input
+          type="cpassword"
+          id="password"
+          placeholder="********"
+          required
+        /><br />
+        <button type="submit" class="button"><b>Submit</b></button>
+      </form>
+    </div>
+    <!-- Form End -->
+  </body>
+</html>
